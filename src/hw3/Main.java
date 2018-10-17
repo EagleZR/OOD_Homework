@@ -1,15 +1,14 @@
 package hw3;
 
+import hw3.weapons.StandardWeapons;
 import hw3.weapons.Weapon;
-import hw3.weapons.WeaponFutureLaser;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
 	public static void main(String[] args) {
-		ArrayList<Weapon> weapons = new ArrayList();
-		weapons.add(new WeaponFutureLaser("Death Ray", 1, 10000));
+		List<Weapon> weapons = StandardWeapons.getStandardWeapons();
 
 		for (int weapon = 0; weapon < weapons.size(); weapon++)
 		{

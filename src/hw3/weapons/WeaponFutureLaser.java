@@ -1,7 +1,7 @@
 package hw3.weapons;
 
-public class WeaponFutureLaser extends hw3.weapons.Weapon {
-	public WeaponFutureLaser(String name, int attacksPerMinute, int maxDamagePoints) {
+class WeaponFutureLaser extends Weapon {
+	WeaponFutureLaser(String name, int attacksPerMinute, int maxDamagePoints) {
 		super(name, attacksPerMinute, maxDamagePoints);
 	}
 
